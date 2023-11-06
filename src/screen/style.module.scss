@@ -1,0 +1,111 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .subContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    .subContainerContent {
+      margin-top: 50px;
+      width: 75vw;
+      display: flex;
+      flex-direction: row;
+      overflow-x: auto;
+      gap: 10px;
+    }
+    .containerVsmode {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+      @media screen and (max-width: 950px) {
+        flex-direction: column;
+        margin-top: 50px;
+      }
+      .containerWinner {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+
+        @media screen and (max-width: 1250px) {
+          margin-top: 50px;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  .containerEmailDiv {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    .InfoEmail {
+      display: flex;
+      flex-direction: column;
+      .titleNewsLetter {
+        font-size: 60px;
+        font-weight: bolder;
+        color: var(--white);
+      }
+      .titleNewsLetterColor {
+        font-size: 60px;
+        font-weight: bolder;
+        color: var(--orange);
+      }
+
+      .imgNewsLetter {
+        width: 300px;
+      }
+      @media screen and (max-width: 700px) {
+        .titleNewsLetter {
+          font-size: 40px;
+        }
+        .imgNewsLetter {
+          width: 150px;
+        }
+      }
+    }
+    .containerForm {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  .containerFooter {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .wrapLogoFooter {
+      scroll-margin-top: 80px;
+      .logoFooter {
+        width: 230px;
+        height: 50px;
+      }
+    }
+    .emailFooter {
+      @media screen and (max-width: 700px) {
+        display: none;
+      }
+    }
+    .socialMidias {
+      ul {
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        li a {
+          color: inherit;
+          padding: 5px;
+          .iconFooter {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}
