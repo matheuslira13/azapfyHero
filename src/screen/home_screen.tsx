@@ -67,7 +67,7 @@ export default function Home({
 
         <TextInput onChange={setFindInList} placeholder="Pesquise seu heroi" />
 
-        <div className={styles.subContainerContent}>
+        <div className={styles.subContainerContent} id="batle">
           {getFilter(result).map((item: TypeHero) => {
             return (
               <Card

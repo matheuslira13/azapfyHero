@@ -22,6 +22,7 @@ export const ModalNewsLetter = ({
           right: 0,
           bottom: 0,
           backgroundColor: "rgba(0, 0, 0, 0.75)",
+          zIndex: 99,
         },
         content: {
           position: "absolute",
